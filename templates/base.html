@@ -9,7 +9,13 @@
     <title>{% block title %}{{ title }}{% endblock title %}</title>
 </head>
 <body>
+    <head>
+        {% include "_navigation.html" %}
+    </head>
     {% block content %}
     {% endblock content %}
 </body>
+<footer>
+    <p>tel: <em>{{ contact }}</em></p>
+</footer>
 </html>
